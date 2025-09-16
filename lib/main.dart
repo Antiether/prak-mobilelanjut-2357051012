@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
       ),
       body: const Center(
         child: Text(
-          "Halo, Nama Saya Faiz",   // ganti sesuai nama kamu
+          "Halo, Nama Saya Faiz Ahmad Nadhif",   // ganti sesuai nama kamu
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
       ),
