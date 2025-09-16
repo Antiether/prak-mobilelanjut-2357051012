@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'column_widget.dart';
+//import 'row_widget.dart';
+//import 'basic_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,31 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Prak MoLa',
+      title: 'Pertemuan 3 - Widget',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Praktikum MoLa"),
-        backgroundColor: Colors.blue,
-      ),
-      body: const Center(
-        child: Text(
-          "Halo, Nama Saya Faiz",   // ganti sesuai nama kamu
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-      ),
+      // Ganti home di sini sesuai widget yang mau ditampilkan
+      home: const ColumnWidget(),  
     );
   }
 }
